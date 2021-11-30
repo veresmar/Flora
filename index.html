@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +21,8 @@
   </head>
 
   <body>
+    <!-- HEADER -->
+
     <div class="header_wrap">
       <header>
         <div class="header_logo">
@@ -28,20 +30,22 @@
         </div>
         <nav>
           <ul class="header_nav">
-            <li><a href="#">BOUQUETS</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">DELIVERY & PRICE</a></li>
+            <li><a href="#gallery_header">BOUQUETS</a></li>
+            <li><a href="#about_us">ABOUT US</a></li>
+            <li><a href="#sale">DELIVERY & PRICE</a></li>
           </ul>
         </nav>
         <div class="header_button">
-          <button class="button_call-us">CALL US</button>
+          <button class="button_call-now">CALL NOW</button>
         </div>
       </header>
     </div>
 
-    <!-- MAIN  -->
+    <!-- MAIN START -->
 
     <main>
+      <!-- SLIDER -->
+
       <div class="main_slider" data-simple-slider>
         <img class="slide_img" src="src/img/slide1.jpg" alt="flowers" />
         <img class="slide_img" src="src/img/slide2.jpg" alt="flowers" />
@@ -49,19 +53,37 @@
       </div>
       <div class="main_slider_text-wrap">
         <h1 class="slider_text-h1">FLORA-RA</h1>
-        <p class="slider_text-p">Best flowers. Fresh flowers. Your flowers</p>
-        <a class="slider_button" href="#gallery">CHOOSE</a>
+        <p class="slider_text-p">
+          Best flowers. Fresh flowers.<br />
+          Your flowers
+        </p>
+        <a class="slider_button" href="#gallery_header">CHOOSE</a>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
       <script>
         simpleslider.getSlider();
       </script>
 
+      <!-- ABOUT US -->
+
+      <section id="about_us">
+        <h2>about us</h2>
+        <p>
+          FLORA-RA is the family company founded in 2014.<br />
+          Our company is a direct supplier of roses from Kenya, from the sunny
+          plains of the Rift Valley. When we bring you flowers in large
+          quantities, we manage to keep our prices as low as possible.<br />
+          Our team consists of professionals: farmers who grow flowers of the
+          Dutch variety Rhodes for over 10 years, and florists who carefully
+          pack you flowers.
+        </p>
+      </section>
+
       <!-- GALLERY  -->
 
       <div class="gallery_wrap">
-        <h2 class="gallery_header">our bouquetes</h2>
-        <div id="gallery">
+        <h2 id="gallery_header">our bouquetes</h2>
+        <div class="gallery">
           <div class="gallery_item">
             <div class="item_img-wrap">
               <img class="item_img" src="src/img/f1.jpg" alt="bouquete" />
@@ -119,7 +141,9 @@
         </div>
       </div>
 
-      <section class="sale">
+      <!-- SALE  -->
+
+      <section id="sale">
         <div class="sale_img-wrap">
           <img src="src/img/sale.jpg" class="sale_img" alt="sale" />
           <div class="sale_text-wrap">
@@ -131,8 +155,14 @@
           </div>
         </div>
       </section>
+
+      <!-- DELIVERY -->
+      <section class="delivery"></section>
     </main>
 
+    <!-- MAIN FINISH  -->
+
+    <!-- FOOTER -->
     <footer>
       <div class="footer_text">
         <h3>follow us</h3>

@@ -1,6 +1,5 @@
 *{
   box-sizing: border-box;
-  width: 100%;
   margin: 0;
   background-color: #f2f2f2;
   overflow-x: hidden;
@@ -9,14 +8,13 @@
 
 
 .header_wrap{
-  padding-left: 35px;
+  padding-left: 55px;
   padding-right: 35px;
 }
 header{
   display: flex;
   align-items: center;
-  max-width: 1440px;
-  min-height: 100px;
+  min-height: 110px;
 }
 .header_logo{
   max-width: 85px; 
@@ -35,21 +33,24 @@ nav{
 }
 .header_nav li{
   list-style: none;
+  min-width: 170px;
 }
 .header_nav a{
   text-decoration: none;
   color: black;
   font-size: 20px;
+  font-weight: 600;
 }
 .header_button{
-  max-width: 100px;
+  max-width: 150px;
+
 }
-.button_call-us{
+.button_call-now{
   background-color: #ff71ab;
   border: 0.5px solid #ff71ab;
-  border-radius: 15px;
+  border-radius: 18px;
   color:black;
-  padding:5px 10px;
+  padding:9px 15px;
   max-width: 100px;
   cursor: pointer;
 }
@@ -58,10 +59,13 @@ nav{
 
 
 
-/*  MAIN  */
+/*  MAIN START  */
 main{
   width: 100%;
 }
+
+/* SLIDER */
+
 .main_slider{
   position: relative;
   width: 100%;
@@ -70,15 +74,28 @@ main{
 .slide_img{
   opacity: 0.9;
   filter: brightness(70%);
+  width: 100%;
 }
 .main_slider_text-wrap{
-  display: inline-block;
   position: absolute;
-  left: 50%;
-  margin-left: -50px;
   top: 50%;
-  margin-top: -50px;
-  color:#ffffff;
+    left: 40%;
+  overflow: hidden;
+  z-index: 5;
+  max-width: 650px;
+    min-height: 230px;
+    border: 15px solid #f2f2f2;
+    box-shadow: 0 15px 30px black;
+    border-radius: 200px;
+    text-align: center;
+}
+.slider_text-h1{
+padding-top: 25%;
+}
+.slider_text-p{
+  padding-top: 14px;
+  margin-bottom: 30px;
+
 }
 .slider_button{
   background-color: #ff71ab;
@@ -90,19 +107,48 @@ main{
   text-decoration: none;
 }
 
+/* ABOUT US */
+#about_us{
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+
+}
+#about_us h2{
+font-size: 48px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+padding-bottom: 50px;
+background-color:transparent;
+
+}
+#about_us p{
+  font-size: 29px;
+  font-weight: 400;
+  text-align: start;
+  background-color:transparent;
+  background: url(./img/pink_object.svg);
+  background-repeat: no-repeat;
+}
 
 /* GALLERY */
 .gallery_wrap{
   margin-left: 25px;
   padding-top: 40px;
 }
-#gallery{
+.gallery{
   display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 2px;
     grid-gap: 10px 160px;
 }
-.gallery_header{
+#gallery_header{
 font-size: 48px;
 font-family: 'Montserrat', sans-serif;
 font-weight: 400;
@@ -123,7 +169,6 @@ padding-bottom: 50px;
 .item_img{
   object-fit: cover;
   position: absolute;
-  height: 325px;
   max-width: 325px;
   top:50%;
   left:50%;
@@ -140,17 +185,18 @@ padding-bottom: 50px;
 }
 
 /* SALE */
-.sale{
+#sale{
 
 }
 .sale_img-wrap{
   position: relative;
-  
 }
 .sale_img{
   filter: brightness(70%);
   height: 500px;
-    object-fit: cover;
+  object-fit: cover; 
+  width: 100%;
+
 }
 .sale_text-wrap{
   position: absolute;
@@ -175,23 +221,30 @@ padding-bottom: 50px;
   text-align: center;
   background-color:transparent;
 }
+ /* DELIVERY  */
+
+
+
+/* MAIN FINISH */
+
 
 /* FOOTER */
 footer{
 display: flex;
-padding-top: 50px;
+padding-top: 25px;
+padding-bottom: 25px;
 align-items: center;
+justify-content: space-around;
 }
 .footer_text{
-font-size: 30px;
+font-size: 28px;
 max-width: 150px;
 }
 .footer_logo{
-max-width: 100px;
-}
-footer_socials{
-max-width: 200px;
+max-width: 85px;
 }
 .socials_logo{
   max-width: 50px;
+  margin-right: 20px;
+  cursor:pointer
 }
