@@ -11,22 +11,22 @@
   padding-left: 55px;
   padding-right: 35px;
 }
+
 header{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   min-height: 110px;
 }
 .header_logo{
   max-width: 85px; 
-  /* margin-left: 55px; */
 }
 .logo{
   max-width: 85px;
 
 }
 nav{
-  padding-left: 250px;
-  padding-right: 250px;
+  
 }
 .header_nav{
   display: flex;
@@ -53,6 +53,11 @@ nav{
   padding:9px 15px;
   max-width: 100px;
   cursor: pointer;
+}
+.button_call-now:hover{
+  background-color: white;
+  border: 0.5px solid white;
+  color:black;
 }
 
 /* HEADER */
@@ -105,6 +110,11 @@ padding-top: 25%;
   padding:5px 10px;
   max-width: 100px;
   text-decoration: none;
+}
+.slider_button:hover{
+  background-color: black;
+  border: 0.5px solid black;
+  color:#ffffff;
 }
 
 /* ABOUT US */
