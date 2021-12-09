@@ -255,23 +255,38 @@ footer{
 .gallery_item{
   max-width: 320px;
   height: auto;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 .item_img-wrap{}
 .item_img{}
 .gallery_item-text{
   padding-top: 10px;
 }
-.item-text-h3{}
-.item-text-p{}
+.item-text-h3{
+}
+.item-text-p{
+  
+}
     /* SALE */
 #sale{}
 .sale_img-wrap{}
 .sale_img{}
 .sale_text-wrap{}
-.sale_text-h3{}
-.sale_text-p{}
+.sale_text-h3{
+  font-size: 40px;
+  margin: 0 auto;
+  width: 100px;
+}
+.sale_text-p{
+  font-size: 24px;
+  width: auto;
+}
     /* DELIVERY  */
-.delivery{}
+.delivery{
+  flex-direction: column;
+    align-items: center;
+}
 .delivery div{}
 .delivery div img{}
     /* MAIN FINISH */
@@ -312,9 +327,14 @@ footer{}
 #about_us p{}
     /* GALLERY */
 .gallery_wrap{}
-.gallery{}
+.gallery{
+  padding-left: 30px;
+}
 #gallery_header{}
-.gallery_item{}
+.gallery_item{
+  margin-left: 0px;
+
+}
 .item_img-wrap{}
 .item_img{}
 .gallery_item-text{}
@@ -369,9 +389,14 @@ footer{}
 #about_us p{}
     /* GALLERY */
 .gallery_wrap{}
-.gallery{}
+.gallery{
+  padding-left: 0px;
+}
 #gallery_header{}
-.gallery_item{}
+.gallery_item{
+  margin-left: 0px;
+
+}
 .item_img-wrap{}
 .item_img{}
 .gallery_item-text{}
